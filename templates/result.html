@@ -1,0 +1,5 @@
+<h2>Result</h2>
+<p>Correct {{ correct }} / {{ total }} ({{ score_pct }}%)</p>
+{% for qid, stu, key, ok in detailed %}
+  <p>Q{{ qid }}: Your answer: {{ stu }} | Correct: {{ key }} | {{ "✔" if ok else "✘" }}</p>
+{% endfor %}

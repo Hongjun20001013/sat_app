@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Novel Prep SAT Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">Novel Prep SAT Platform</div>
+    <div class="nav-links">
+        <a href="/">Dashboard</a>
+        <a href="/practice">Practice</a>
+        <a href="/mock">Mock Test</a>
+    </div>
+</div>
+
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>

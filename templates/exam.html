@@ -1,0 +1,10 @@
+<form method="post" action="/submit">
+  {% for q in questions %}
+    <p><b>{{ loop.index }}. {{ q.stem }}</b></p>
+    <label><input type="radio" name="{{ q.id }}" value="A"> {{ q.choice_a }}</label><br>
+    <label><input type="radio" name="{{ q.id }}" value="B"> {{ q.choice_b }}</label><br>
+    <label><input type="radio" name="{{ q.id }}" value="C"> {{ q.choice_c }}</label><br>
+    <label><input type="radio" name="{{ q.id }}" value="D"> {{ q.choice_d }}</label><br><br>
+  {% endfor %}
+  <button type="submit">Submit</button>
+</form>

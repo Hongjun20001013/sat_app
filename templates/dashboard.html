@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Welcome Back</h1>
+<p>Your personalized Digital SAT training dashboard</p>
+
+
+<div class="card-grid">
+
+    <div class="card">
+        <h3>📘 Start Practice</h3>
+        <p>Train by skill. Improve weak areas.</p>
+        <button class="big-btn" onclick="location.href='/practice'">Start Practice</button>
+    </div>
+
+    <div class="card">
+        <h3>📝 Full Mock Test</h3>
+        <p>Simulate real Digital SAT experience.</p>
+        <button class="big-btn" onclick="location.href='/mock'">Start Mock Test</button>
+    </div>
+
+    <div class="card">
+        <h3>📊 Performance Analytics</h3>
+        <p>Track accuracy, speed, and weak skills.</p>
+        <button class="big-btn">View Report</button>
+    </div>
+
+</div>
+{% endblock %}
